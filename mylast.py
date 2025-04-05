@@ -7,20 +7,20 @@ import pylast
 # Obtain yours from https://www.last.fm/api/account for Last.fm
 
 try:
-    API_KEY = os.environ["LASTFM_API_KEY"]
-    API_SECRET = os.environ["LASTFM_API_SECRET"]
+    API_KEY = os.environ["c1175384f61a30479f7e8ed4d17fc361"]
+    API_SECRET = os.environ["eabdebdc86bbe6cbae35191a5b00787a"]
 except KeyError:
-    API_KEY = "my_api_key"
-    API_SECRET = "my_apy_secret"
+    API_KEY = "8b3235006473413e5645dc1d37be50f2"
+    API_SECRET = "8a5cb83cdece02f71f2c0e01709dd787"
 
 try:
-    lastfm_username = os.environ["LASTFM_USERNAME"]
-    lastfm_password_hash = os.environ["LASTFM_PASSWORD_HASH"]
+    lastfm_username = os.environ["BlondedGlazer"]
+    lastfm_password_hash = os.environ["Linux1818(lastfm)"]
 except KeyError:
     # In order to perform a write operation you need to authenticate yourself
-    lastfm_username = "my_username"
+    lastfm_username = "BlondedGlazer"
     # You can use either use the password, or find the hash once and use that
-    lastfm_password_hash = pylast.md5("my_password")
+    lastfm_password_hash = pylast.md5("Linux1818(lastfm)")
     print(lastfm_password_hash)
     # lastfm_password_hash = "my_password_hash"
 
